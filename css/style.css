@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,900&display=swap');
+*{
+    font-family: 'Poppins',cursive;
+}
+body{
+    color: azure;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+
+    background-color: #fce4ec; /* Fondo rosa suave */
+    color: #333; /* Color de texto oscuro para contraste */
+    font-family: 'Georgia', serif; /* Fuente elegante */
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+
+    .imagen-container {
+        position: relative;
+        width: 100%;
+        max-width: 250px; /* Tamaño máximo reducido aún más */
+        margin: 15px auto; /* Margen reducido */
+        background: #fff; /* Fondo blanco para el contenedor de la imagen */
+        padding: 3px; /* Padding reducido aún más */
+        border-radius: 8px; /* Bordes redondeados más sutiles */
+        border: 1px solid #f8bbd0; /* Borde rosa suave y delgado */
+        box-shadow: 0 1px 2px rgba(0,0,0,0.1); /* Sombra más sutil */
+    }
+
+    .mi-imagen {
+        width: 100%;
+        height: auto;
+        border-radius: 8px; /* Bordes redondeados más sutiles */
+    }
+    
+    .texto-superpuesto {
+        position: absolute;
+        bottom: 5px; /* Ajusta la posición del texto */
+        left: 5px; /* Ajusta la posición del texto */
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5); /* Fondo negro semi-transparente */
+        padding: 3px; /* Padding reducido */
+        border-radius: 4px; /* Bordes redondeados más sutiles */
+        font-family: 'Georgia', serif;
+        font-size: 14px; /* Tamaño de fuente ajustado */
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7); /* Sombra en el texto */
+    }
+    
+
+    .boton-romantico {
+        display: block;
+        width: fit-content;
+        margin: 10px auto; /* Margen reducido */
+        padding: 6px 12px; /* Padding reducido */
+        background-color: #d81b60; /* Fondo rosa */
+        color: white;
+        text-align: center;
+        border-radius: 15px; /* Bordes redondeados más sutiles */
+        text-decoration: none;
+        font-size: 14px; /* Tamaño de fuente ajustado */
+        font-family: 'Georgia', serif;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.1); /* Sombra más sutil */
+        transition: background-color 0.3s ease;
+    }
+
+    .boton-romantico:hover {
+        background-color: #c2185b; /* Fondo rosa más oscuro en hover */
+    }
+
+    .romantic-text {
+        font-family: 'Georgia', serif; /* Fuente elegante */
+        font-size: 18px; /* Tamaño de fuente reducido */
+        text-shadow: 
+            1px 1px 0 rgba(0, 0, 0, 0.2), 
+            2px 2px 0 rgba(255, 255, 255, 0.4); /* Sombra sutil para destacar */
+        display: block; /* Para asegurar que cada <span> ocupe su propia línea */
+        margin: 3px 0; /* Espacio reducido entre líneas de texto */
+    }
+
+    .romantic-text {
+        display: inline; /* Asegura que los elementos estén en una sola línea */
+        font-family: 'Georgia', serif; /* Fuente elegante */
+        font-size: 24px; /* Tamaño de fuente ajustado */
+        color: #333; /* Color del texto */
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Sombra sutil para destacar */
+        margin: 0 10px; /* Espacio entre los textos */
+    }
+
+    /* styles.css */
+    button {
+        font-size: 16px;
+        padding: 10px 20px;
+        background-color: #ff69b4; /* Color rosa */
+        border: none;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        position: relative; /* Asegura que el enlace esté posicionado correctamente dentro del botón */
+    }
+
+    button a {
+        color: white; /* Color del texto del enlace */
+        text-decoration: none; /* Elimina el subrayado del enlace */
+    }
+
+    button:hover {
+        background-color: #ff1493; /* Color rosa más oscuro */
+    }
+    
+}
+
+.greetings{
+    font-size: 6rem;
+    font-weight: 900;
+}
+.greetings > span{
+    animation: glow 2.5s ease-in-out infinite;
+}
+@keyframes glow {
+        0%, 100% {
+            color: #fff; /* Color del texto cuando está iluminado */
+            text-shadow: 
+                0 0 12px #ff0000, /* Resplandor rojo suave */
+                0 0 24px #ff0000, /* Resplandor rojo más fuerte */
+                0 0 36px #ff0000; /* Resplandor rojo aún más fuerte */
+        }
+        10%, 90% {
+            color: #696565; /* Color del texto cuando no está iluminado */
+            text-shadow: none; /* Sin sombra de texto cuando no está iluminado */
+        }
+    }
+    .greetings > span:nth-child(2){
+        animation-delay: .1s ;
+    }
+.greetings > span:nth-child(2){
+    animation-delay: .2s ;
+}
+.greetings > span:nth-child(3){
+    animation-delay: .4s ;
+}
+.greetings > span:nth-child(4){
+    animation-delay: .6s;
+}
+.greetings > span:nth-child(5){
+    animation-delay: .8s;
+}
+
+.description{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.button a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: #111;
+}
+
+@media screen and (max-width:574px){
+    .greetings{
+        display: block;
+        font-size: 3rem;
+        font-weight: 500;
+        text-align: center;
+    }
+    .description{
+        font-size: 1rem;
+    }
+    
+    .button a{
+        font-size: .5rem;
+    }
+}
+
+.description{
+    color: #fbff00;
+}
+
+/* Estilo para el botón */
+.button button {
+    background-color: yellow; /* Fondo amarillo */
+    border: none; /* Sin bordes */
+    padding: 10px 20px; /* Ajusta el relleno según tu preferencia */
+    font-size: 18px; /* Tamaño de fuente */
+    cursor: pointer;
+    position: relative; /* Necesario para el resplandor */
+    border-radius: 20px; /* Esquinas redondeadas */
+    transition: background-color 0.3s ease-in-out; /* Transición suave para el color de fondo */
+  }
+  
+  /* Estilo para el enlace dentro del botón */
+  .button button a {
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    color: inherit; /* Hereda el color del texto del botón */
+  }
+  
+  /* Efecto de resplandor al pasar el cursor sobre el botón */
+  .button button:hover {
+    background-color: orange; /* Cambia el color de fondo al pasar el mouse a naranja */
+    box-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow; /* Efecto de resplandor amarillo */
+  }
